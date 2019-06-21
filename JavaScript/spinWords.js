@@ -14,3 +14,8 @@ spinWords( "This is another test" )=> returns "This is rehtona test"
 function spinWords(input){
   return input.split(' ').map((word) => word.length >= 5 ? word.split('').reverse().join('') : word).join(' ');
 }
+
+// Using the spread operator
+function spinWords(str){
+  return str.split(' ').map((word) => word.length >= 5 ? [...word].reverse().join('') : word).join(' ');
+}

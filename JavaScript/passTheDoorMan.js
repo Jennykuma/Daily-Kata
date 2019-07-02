@@ -18,3 +18,6 @@ The function passTheDoorMan with a given string word shall return the right numb
 function passTheDoorMan (word){
   return (word.match(/(\w)\1+/g)[0][0].charCodeAt()-96) * 3;
 }
+
+// REFACTORED
+const passTheDoorMan = word => (word.match(/(\w)\1+/g)[0][0].charCodeAt()-96) * 3;

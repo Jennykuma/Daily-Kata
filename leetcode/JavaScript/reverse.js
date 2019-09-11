@@ -39,5 +39,5 @@ var reverse = function(x) {
         reverseInt = 0;
     }
     
-    return reverseInt
+    return reverseInt;
 };

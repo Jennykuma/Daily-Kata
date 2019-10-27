@@ -17,7 +17,7 @@ class Stack {
         returnValue = this.data.pop();
 
         if(this.data.length === 0) {
-            this.min = -1;
+            this.min = Number.MAX_SAFE_INTEGER;
         } else {
             this.min = Math.min(...this.data);
         }

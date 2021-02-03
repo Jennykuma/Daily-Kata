@@ -17,3 +17,10 @@ function getCount(str) {
 
     return vowelsCount;
 }
+
+// New solution 2/2/2021
+function getCount(str) {
+  vowelsCount = 0
+  vowelsCount = str.length - str.replace(/a|e|i|o|u/g,'').length 
+  return vowelsCount
+}

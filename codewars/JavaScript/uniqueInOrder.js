@@ -27,3 +27,8 @@ var uniqueInOrder = function (iterable) {
     });
     return itemsList;
 }
+
+// New solution 2/3/2021
+var uniqueInOrder=function(iterable){
+    return [...iterable].filter((currentLetter, letterIndex) => currentLetter != iterable[letterIndex-1])
+  }
